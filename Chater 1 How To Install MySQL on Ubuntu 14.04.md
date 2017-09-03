@@ -129,4 +129,5 @@ Create hot backups with Percona XtraBackup
 Learn how to use MySQL with Django applications or Ruby on Rails applications
 Manage your MySQL servers with SaltStack
 
-mysql -u root -p root -e "create user 'root'@'10.0.2.2' identified by 'root'; grant all privileges on *.* to 'root'@'10.0.2.2' with grant option; flush privileges;"
+grant all privileges on *.* to 'root'@'%' identified by 'root' with grant option;
+flush privileges;
